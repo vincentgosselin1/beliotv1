@@ -1,0 +1,13 @@
+Beliotv1 est le site web pour le PFE. Il s'agit de la version la plus basic du serveur. Pour l'instant, la database est PostgreSQL et il ne contient pas le display des metrics par Grafana. 
+
+Le site est deja en ligne sur beliotv1.herokuapp.com
+
+Il s'agit de la version la plus simplistique pour afficher les donners envoye par le gateway (raspberry pi 3).
+
+Ce site est pour valide la chaine de donnee suivante :
+
+	Arduino node -> Rasp Gateway -> beliotv1 Webserver.
+
+
+Par Vincent Gosselin, 2017.
+
