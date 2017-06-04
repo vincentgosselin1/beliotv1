@@ -1,4 +1,14 @@
-<h2>Hello World</h2>
+<!-- This is the current landing page of the APP at beliotv1.herokuapp.com-->
+
+<div class="jumbotron">
+<h1>This is a test for Communication between Rasp and Webserver</h1>
+</div>
 <p>
-  The time is now: <%= Time.now %>
+  <h3>The time is now: <%= Time.now %></h3>
 </p>
+<%= link_to "To POST DATA to server click here!", '/create', class: "btn btn-large btn-primary" %>
+<h1> The content of the message table in Database</h1>
+<!-- Reversing list to see the latest message -->
+<% @all_data.reverse.each do |line| %>
+<p>Message from Rasp : <%= line.message %> ### Created at  <%= line.created_at %></p>
+<% end %>  
